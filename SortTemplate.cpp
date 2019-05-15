@@ -5,7 +5,7 @@ using std::cin;
 using std::endl;
 
 template<typename T>
-bool PrintMass( T const *Arr, unsigned ArrSize)
+static bool PrintMass( T const *Arr, unsigned ArrSize)
 {
     if(Arr == nullptr)
       {
@@ -21,7 +21,7 @@ bool PrintMass( T const *Arr, unsigned ArrSize)
 }
 
 template<typename T>
-bool FillRandMass (T *Arr, unsigned ArrSize)
+static bool FillRandMass (T *Arr, unsigned ArrSize)
 {
     if(Arr == nullptr)
       {
@@ -35,7 +35,7 @@ bool FillRandMass (T *Arr, unsigned ArrSize)
 }
 
 template<typename T>
-bool BubbleSort(T *Arr, unsigned ArrSize)
+static bool BubbleSort(T *Arr, unsigned ArrSize)
 {
     if(Arr == nullptr)
       {
@@ -71,20 +71,3 @@ int main()
     PrintMass(f_mass,size);
     return 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
